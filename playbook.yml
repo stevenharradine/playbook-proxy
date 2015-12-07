@@ -10,7 +10,7 @@
     - role: stevenharradine.static-ip
       static_ip_address: "{{ ip_address }}"
     - role: stevenharradine.hostname
-    - role: stevenharradine.haproxy-simple
+    - role: stevenharradine.haproxy
   tasks:
     - name: enable pseudo-forge
       lineinfile:

@@ -1,4 +1,4 @@
 ---
 - src: stevenharradine.static-ip
 - src: stevenharradine.hostname
-- src: stevenharradine.haproxy-simple
+- src: stevenharradine.haproxy
