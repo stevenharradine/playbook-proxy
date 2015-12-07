@@ -12,6 +12,7 @@
     - role: stevenharradine.hostname
     - role: stevenharradine.haproxy
       haproxy_stats_enabled: no
+      domain: ip_address
   tasks:
     - name: enable pseudo-forge
       lineinfile:
