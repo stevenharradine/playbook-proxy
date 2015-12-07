@@ -11,6 +11,7 @@
       static_ip_address: "{{ ip_address }}"
     - role: stevenharradine.hostname
     - role: stevenharradine.haproxy
+      haproxy_stats_enabled: no
   tasks:
     - name: enable pseudo-forge
       lineinfile:
