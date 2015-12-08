@@ -12,6 +12,8 @@
     - role: stevenharradine.hostname
     - role: telusdigital.ssl-certificate
       ssl_certificate_combined: yes
+      ssl_certificate_self_signed_age: 365
+      ssl_certificate_self_signed_subject: "/C=US/ST=CA/L=Eureka/O=Global Dynamics/CN={{ ip_address }}"
     - role: stevenharradine.haproxy
       haproxy_stats_enabled: no
       domain: "{{ ip_address }}"
