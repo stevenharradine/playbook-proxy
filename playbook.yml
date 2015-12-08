@@ -12,8 +12,15 @@
     - role: stevenharradine.hostname
     - role: stevenharradine.haproxy
       haproxy_stats_enabled: no
-      domain: ip_address
+      domain: "{{ ip_address }}"
   tasks:
+    - name: create static ip
+      template:
+        src: etc/haproxy/haproxy.cfg
+        dest: /etc/haproxy/haproxy.cfg
+        owner: root
+        group: root
+        mode: 0600
     - name: enable pseudo-forge
       lineinfile:
         dest: /home/douglas/.bashrc
