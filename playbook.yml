@@ -10,6 +10,8 @@
     - role: stevenharradine.static-ip
       static_ip_address: "{{ ip_address }}"
     - role: stevenharradine.hostname
+    - role: telusdigital.ssl-certificate
+      ssl_certificate_combined: yes
     - role: stevenharradine.haproxy
       haproxy_stats_enabled: no
       domain: "{{ ip_address }}"
