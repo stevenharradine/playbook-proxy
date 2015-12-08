@@ -14,7 +14,7 @@
       haproxy_stats_enabled: no
       domain: "{{ ip_address }}"
   tasks:
-    - name: create static ip
+    - name: copy custom haproxy config
       template:
         src: templates/etc/haproxy/haproxy.cfg
         dest: /etc/haproxy/haproxy.cfg
