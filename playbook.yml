@@ -25,6 +25,7 @@
         owner: root
         group: root
         mode: 0600
+      notify: Reload Service | haproxy
     - name: enable pseudo-forge
       lineinfile:
         dest: /home/douglas/.bashrc
