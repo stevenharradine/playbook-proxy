@@ -16,7 +16,7 @@
   tasks:
     - name: create static ip
       template:
-        src: etc/haproxy/haproxy.cfg
+        src: templates/etc/haproxy/haproxy.cfg
         dest: /etc/haproxy/haproxy.cfg
         owner: root
         group: root
